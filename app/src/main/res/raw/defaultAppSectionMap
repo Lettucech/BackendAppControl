@@ -1,0 +1,18 @@
+{
+  "sections": {
+	"0": {
+	  "name": "(id: 0) Section A"
+	},
+	"1": {
+	  "name": "(id: 1) Section B"
+	},
+	"2": {
+	  "name": "(id: 2) Section C"
+	},
+	"3": {
+	  "name": "(id: 3) Section D"
+	}
+  },
+  "anchor_page": 0,
+  "version": ""
+}
