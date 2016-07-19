@@ -14,4 +14,11 @@ public class AppSection {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	@Override
+	public String toString() {
+		return "AppSection{" + "\n" +
+				"name='" + name + '\'' + "\n" +
+				'}' + "\n";
+	}
 }

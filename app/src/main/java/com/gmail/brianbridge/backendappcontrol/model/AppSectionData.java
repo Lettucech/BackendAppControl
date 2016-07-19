@@ -37,4 +37,13 @@ public class AppSectionData {
 	public void setVersion(String version) {
 		this.version = version;
 	}
+
+	@Override
+	public String toString() {
+		return "AppSectionData{" + "\n" +
+				"appSections=" + appSections + "\n" +
+				", anchorPage=" + anchorPage + "\n" +
+				", version='" + version + '\'' + "\n" +
+				'}';
+	}
 }

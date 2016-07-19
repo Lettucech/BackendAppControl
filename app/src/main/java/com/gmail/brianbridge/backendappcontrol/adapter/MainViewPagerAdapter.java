@@ -12,12 +12,12 @@ import java.util.List;
 
 public class MainViewPagerAdapter extends FragmentPagerAdapter {
 	private List<Fragment> fragments = new ArrayList<>();
+	private String[] title;
 
-	private AppCompatActivity activity;
-
-	public MainViewPagerAdapter(FragmentManager fm, List<Fragment> fragments) {
+	public MainViewPagerAdapter(FragmentManager fm, List<Fragment> fragments, String[] title) {
 		super(fm);
 		this.fragments = fragments;
+		this.title = title;
 	}
 
 	@Override
@@ -28,5 +28,10 @@ public class MainViewPagerAdapter extends FragmentPagerAdapter {
 	@Override
 	public Fragment getItem(int position) {
 		return fragments.get(position);
+	}
+
+	@Override
+	public CharSequence getPageTitle(int position) {
+		return title[position];
 	}
 }
